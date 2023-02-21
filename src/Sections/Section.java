@@ -1,4 +1,10 @@
 package Sections;
 
-public interface Section {
+import lombok.Data;
+
+@Data
+public abstract class Section {
+    SectionType sectionType;
+
+
 }

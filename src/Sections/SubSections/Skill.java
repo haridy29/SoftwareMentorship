@@ -11,5 +11,10 @@ import java.util.List;
 @NoArgsConstructor
 public class Skill {
     String type;
-    List<String> skills;
+    String skills;
+
+    @Override
+    public String toString() {
+        return this.type + ": " + this.skills;
+    }
 }

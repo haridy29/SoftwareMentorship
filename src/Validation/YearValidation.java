@@ -7,9 +7,17 @@ import java.util.Date;
 import java.util.Locale;
 
 public class YearValidation extends Validate {
+    private static Validate validate;
 
-    public YearValidation() {
+    protected YearValidation() {
         this.regex = Constants.YEAR_REGEX;
+    }
+
+    public static Validate getInstance() {
+        if (validate == null) {
+            validate = new YearValidation();
+        }
+        return validate;
     }
 
     @Override

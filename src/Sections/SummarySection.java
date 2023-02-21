@@ -6,11 +6,19 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
-@AllArgsConstructor
-public class SummarySection implements Section {
 
-
+public class SummarySection extends Section {
     Paragraph paragraph;
 
+    public SummarySection(Paragraph paragraph) {
+        this.sectionType = SectionType.SUMMARY;
+        this.paragraph = paragraph;
+    }
+
+    @Override
+    public String toString() {
+        return "\t\tSummary\n"
+                +this.paragraph.toString() + "\n";
+
+    }
 }

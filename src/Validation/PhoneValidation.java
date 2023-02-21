@@ -4,9 +4,17 @@ import lombok.AllArgsConstructor;
 
 
 public class PhoneValidation extends Validate {
+    private static Validate validate;
 
-    public PhoneValidation() {
+    private PhoneValidation() {
         this.regex = Constants.PHONE_REGEX;
+    }
+
+    public static Validate getInstance() {
+        if (validate == null) {
+            validate = new PhoneValidation();
+        }
+        return validate;
     }
 
     @Override
