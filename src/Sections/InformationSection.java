@@ -1,3 +1,5 @@
+package Sections;
+
 import lombok.*;
 
 
@@ -5,7 +7,7 @@ import lombok.*;
 @NoArgsConstructor
 @AllArgsConstructor
 public class InformationSection implements Section {
-    private String section;
+    private String name;
     private String title;
     private String phone;
     private String email;
