@@ -17,7 +17,7 @@ public class SummarySection extends Section {
 
     @Override
     public String toString() {
-        return "\t\tSummary\n"
+        return "Summary\n"
                 +this.paragraph.toString() + "\n";
 
     }

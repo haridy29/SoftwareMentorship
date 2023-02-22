@@ -34,8 +34,6 @@ public class UI {
     }
 
 
-
-
     public InformationModel addInformationUI() throws Exception {
         validate = LetterSDDAValidation.getInstance();
 
@@ -120,18 +118,21 @@ public class UI {
         while (true) {
             System.out.print("5. Number of paragraphs: ");
             numOfParagraph = in.nextInt();
+            in.nextLine();
+
             if (numOfParagraph < 0)
                 System.out.println("invalid input the minimum number of paragraphs is 0");
             else break;
         }
 
         for (int i = 0; i < numOfParagraph; i++) {
-            System.out.print("Paragraph " + i + ": ");
+            System.out.print("Paragraph " + (i + 1) + ": ");
+
             paragraph = in.nextLine();
             paragraphs.add(paragraph);
         }
         while (true) {
-            System.out.println("6. Show paragraphs with bullet points [y/n]: ");
+            System.out.print("6. Show paragraphs with bullet points [y/n]: ");
             ch = in.nextLine();
             if (!ch.equalsIgnoreCase("y") && !ch.equalsIgnoreCase("n")) {
                 System.out.println("Invalid input the data should be [y/n] ");
@@ -196,7 +197,7 @@ public class UI {
         System.out.println("\n\n\n\t\tAdd Skills\n");
         validate = LetterSDDValidation.getInstance();
         while (true) {
-            System.out.print(" Skill type name: ");
+            System.out.print("1. Skill type name: ");
             skillTypeName = in.nextLine();
             if (validate.isValid(skillTypeName)) break;
             System.out.println(validate.getPattern());

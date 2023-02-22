@@ -25,7 +25,7 @@ public class WorkExperienceSection extends Section {
 
     @Override
     public String toString() {
-        String myWorks = "\t\tWork Experience\n";
+        String myWorks = "Work Experience\n";
         for (Work work : works) {
             myWorks = myWorks.concat(work.toString() + "\n");
         }

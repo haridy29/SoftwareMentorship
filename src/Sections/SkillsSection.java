@@ -24,7 +24,7 @@ public class SkillsSection extends Section {
 
     @Override
     public String toString() {
-        String skills = "\t\tSkills\n";
+        String skills = "Skills\n";
         for (Skill skill : mySkills) {
             skills = skills.concat(skill.toString()+"\n");
         }

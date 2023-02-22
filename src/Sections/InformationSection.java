@@ -27,7 +27,7 @@ public class InformationSection extends Section {
 
     @Override
     public String toString() {
-        return "\t\tInformation\n" +
+        return "Information\n" +
                 this.name + "\n" +
                 this.title + "\n" +
                 this.phone + "\t" + this.email + "\t" + this.address + "\n";

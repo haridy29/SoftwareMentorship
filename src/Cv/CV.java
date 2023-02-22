@@ -4,10 +4,7 @@ import Sections.Section;
 import Sections.SectionType;
 import lombok.*;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 @Setter
 @Getter
@@ -18,7 +15,7 @@ public abstract class CV {
 
 
     public CV() {
-        sections = new HashMap<>();
+        sections = new TreeMap<>();
     }
 
     //Save at text file
@@ -30,8 +27,10 @@ public abstract class CV {
         StringBuilder myCV = new StringBuilder();
         for (Section section : sections.values()) {
             myCV.append(section.toString());
-            myCV.append("--------------------------------------------------------------------");
+
+            myCV.append("--------------------------------------------------------------------\n");
         }
+
         return myCV;
     }
 }

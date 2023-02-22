@@ -25,8 +25,17 @@ public class Main {
                     """);
 
             System.out.print("Choice? [1-7]: ");
+            int choice = 0;
+            try {
 
-            int choice = in.nextInt();
+                choice = in.nextInt();
+                in.nextLine();
+
+            } catch (Exception e) {
+                in.nextLine();
+
+                System.out.println("The input should be integer only");
+            }
 
             if (choice > 7 || choice < 1) {
                 System.out.println("Invalid Choice");

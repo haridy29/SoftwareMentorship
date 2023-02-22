@@ -28,7 +28,7 @@ public class EducationSection extends Section {
 
     @Override
     public String toString() {
-        return "\t\tEducation\n" +
+        return "Education\n" +
                 this.school + "\t" +
                 this.fromYear + " to " + this.toYear + "\n" +
                 this.degree+"\n";
