@@ -42,6 +42,7 @@ public class NormalCVBuilder implements Builder {
             this.normalCv.addSection(new WorkExperienceSection());
         WorkExperienceSection myWorkExperienceSection = (WorkExperienceSection) this.normalCv.getSections().get(SectionType.WORK_EXPERIENCE);
         List<Paragraph> paragraphs = new ArrayList<>();
+
         if (workExperienceModel.isBullet()) {
             for (int i = 0; i < workExperienceModel.getParagraph().size(); i++) {
                 paragraphs.add(new BulletParagraph(workExperienceModel.getParagraph().get(i)));

@@ -1,5 +1,3 @@
-import Cv.Builder;
-import Cv.NormalCVBuilder;
 import Models.*;
 import Validation.*;
 
@@ -15,22 +13,6 @@ public class UI {
 
     public UI() {
         this.in = new Scanner(System.in);
-
-
-    }
-
-    private boolean doSave() {
-        System.out.print("Save? [y,n]: ");
-        String save = in.nextLine();
-        if (save.equalsIgnoreCase("y")) {
-            return true;
-        } else if (save.equalsIgnoreCase("n")) {
-            return false;
-
-        } else {
-            System.out.println("Invalid input (y) or (n) only. ");
-            return doSave();
-        }
     }
 
 
@@ -131,7 +113,7 @@ public class UI {
             paragraph = in.nextLine();
             paragraphs.add(paragraph);
         }
-        while (true) {
+        while (numOfParagraph > 0) {
             System.out.print("6. Show paragraphs with bullet points [y/n]: ");
             ch = in.nextLine();
             if (!ch.equalsIgnoreCase("y") && !ch.equalsIgnoreCase("n")) {
@@ -236,4 +218,19 @@ public class UI {
         }
 
     }
+
+    private boolean doSave() {
+        System.out.print("Save? [y,n]: ");
+        String save = in.nextLine();
+        if (save.equalsIgnoreCase("y")) {
+            return true;
+        } else if (save.equalsIgnoreCase("n")) {
+            return false;
+
+        } else {
+            System.out.println("Invalid input (y) or (n) only. ");
+            return doSave();
+        }
+    }
+
 }

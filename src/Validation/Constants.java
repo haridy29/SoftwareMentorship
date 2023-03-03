@@ -1,8 +1,5 @@
 package Validation;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public final class Constants {
 
     public static final String[] MONTHS = {"January", "February", "March", "April",

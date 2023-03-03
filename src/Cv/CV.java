@@ -2,9 +2,12 @@ package Cv;
 
 import Sections.Section;
 import Sections.SectionType;
-import lombok.*;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-import java.util.*;
+import java.util.Map;
+import java.util.TreeMap;
 
 @Setter
 @Getter

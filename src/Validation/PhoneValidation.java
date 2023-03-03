@@ -1,8 +1,5 @@
 package Validation;
 
-import lombok.AllArgsConstructor;
-
-
 public class PhoneValidation extends Validate {
     private static Validate validate;
 

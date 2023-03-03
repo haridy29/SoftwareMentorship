@@ -1,8 +1,5 @@
 package Validation;
 
-import lombok.Data;
-
-
 public abstract class Validate {
     protected String regex;
     private static Validate validate;
