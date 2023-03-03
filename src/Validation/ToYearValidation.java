@@ -19,7 +19,7 @@ public class ToYearValidation extends YearValidation{
 
     public static Validate getInstance() {
         if (validate == null)
-            validate = new ToDateValidation();
+            validate = new ToYearValidation();
         return validate;
     }
 }
