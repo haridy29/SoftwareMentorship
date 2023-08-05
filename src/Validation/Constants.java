@@ -1,6 +1,6 @@
 package Validation;
 
-public final class Constants {
+final public class Constants {
 
     public static final String[] MONTHS = {"January", "February", "March", "April",
             "May", "June", "July", "August",

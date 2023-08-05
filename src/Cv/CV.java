@@ -14,7 +14,7 @@ import java.util.TreeMap;
 @Data
 
 public abstract class CV {
-    Map<SectionType, Section> sections;
+    protected Map<SectionType, Section> sections;
 
 
     public CV() {
@@ -36,4 +36,5 @@ public abstract class CV {
 
         return myCV;
     }
+
 }

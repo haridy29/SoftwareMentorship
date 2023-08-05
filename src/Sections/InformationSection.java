@@ -33,4 +33,5 @@ public class InformationSection extends Section {
                 this.phone + "\t" + this.email + "\t" + this.address + "\n";
 
     }
+
 }
