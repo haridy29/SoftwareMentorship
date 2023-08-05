@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 
 public class SummarySection extends Section {
-    Paragraph paragraph;
+    private Paragraph paragraph;
 
     public SummarySection(Paragraph paragraph) {
         this.sectionType = SectionType.SUMMARY;

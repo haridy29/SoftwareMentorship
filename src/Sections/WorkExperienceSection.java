@@ -8,9 +8,8 @@ import java.util.List;
 
 
 @Data
-
 public class WorkExperienceSection extends Section {
-    List<Work> works;
+    private List<Work> works;
 
     public WorkExperienceSection() {
         this.sectionType = SectionType.WORK_EXPERIENCE;

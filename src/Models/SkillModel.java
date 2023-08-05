@@ -8,6 +8,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class SkillModel {
-    String type;
-    String skills;
+    private String type;
+    private String skills;
 }

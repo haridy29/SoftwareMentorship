@@ -1,7 +1,7 @@
 package Sections.SubSections;
 
 public abstract class Paragraph {
-    String data;
+   private String data;
 
     public Paragraph(String data) {
         this.data = data;

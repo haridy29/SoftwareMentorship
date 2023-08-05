@@ -4,11 +4,11 @@ import lombok.Data;
 
 @Data
 public class EducationSection extends Section {
-    String school;
-    String degree;
-    String fromYear;
-    String toYear;
-    String fos; //this member represents field of study
+    private String school;
+    private String degree;
+    private String fromYear;
+    private String toYear;
+    private String fos; //this member represents field of study
 
     public EducationSection() {
         this.sectionType = SectionType.EDUCATION;
@@ -29,6 +29,6 @@ public class EducationSection extends Section {
         return "Education\n" +
                 this.school + "\t" +
                 this.fromYear + " to " + this.toYear + "\n" +
-                this.degree+"\n";
+                this.degree + "\n";
     }
 }

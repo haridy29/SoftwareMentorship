@@ -10,11 +10,11 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class WorkExperienceModel {
-    String title;
-    String company;
-    String fromDate;
-    String toDate;
-    List<String> paragraph;
-    boolean bullet;
+    private String title;
+    private String company;
+    private String fromDate;
+    private String toDate;
+    private List<String> paragraph;
+    private boolean bullet;
 
 }

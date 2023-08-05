@@ -8,10 +8,10 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class EducationModel {
-    String school;
-    String degree;
-    String fromYear;
-    String toYear;
-    String fos; //this member represents field of study
+    private String school;
+    private String degree;
+    private String fromYear;
+    private String toYear;
+    private String fos; //this member represents field of study
 
 }

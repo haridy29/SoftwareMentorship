@@ -9,7 +9,7 @@ import java.util.List;
 @Data
 public class SkillsSection extends Section {
 
-    List<Skill> mySkills;
+    private List<Skill> mySkills;
 
     public SkillsSection() {
         this.sectionType = SectionType.SKILLS;

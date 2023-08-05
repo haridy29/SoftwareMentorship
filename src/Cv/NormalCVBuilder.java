@@ -13,7 +13,7 @@ import java.util.List;
 
 public class NormalCVBuilder implements Builder {
 
-    CV normalCv;
+    private CV normalCv;
 
     public NormalCVBuilder() {
         normalCv = new NormalCV();

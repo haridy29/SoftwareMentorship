@@ -10,11 +10,11 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Work {
-    String title;
-    String company;
-    String fromDate;
-    String toDate;
-    List<Paragraph> paragraphs;
+    private String title;
+    private String company;
+    private String fromDate;
+    private String toDate;
+    private List<Paragraph> paragraphs;
 
     @Override
     public String toString() {
