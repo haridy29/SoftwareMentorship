@@ -1,6 +1,8 @@
 package Validation;
 
 public class EmailValidation extends Validate {
+    private static Validate validate;
+
     private EmailValidation() {
         this.regex = Constants.EMAIL_REGEX;
     }
@@ -10,7 +12,7 @@ public class EmailValidation extends Validate {
         return email.matches(regex);
 
     }
-    private static Validate validate;
+
 
     @Override
     public String getPattern() {

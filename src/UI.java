@@ -188,8 +188,20 @@ public class UI {
         while (true) {
             System.out.print("2. Skills: ");
             skills = in.nextLine();
-            if (validate.isValid(skills)) break;
-            System.out.println(validate.getPattern());
+
+            String[] splitedSkills = skills.split(",");
+            boolean valid = true;
+            for (String splitedSkill : splitedSkills) {
+                if (!validate.isValid(splitedSkill.trim())) {
+                    valid = false;
+                    break;
+                }
+            }
+            if (!valid) {
+                System.out.println(validate.getPattern());
+            } else {
+                break;
+            }
         }
         if (doSave()) {
             return new SkillModel(skillTypeName, skills);

@@ -1,7 +1,7 @@
 package Validation;
 
 public class ToYearValidation extends YearValidation{
-    protected static Validate validate;
+    private static Validate validate;
 
     protected ToYearValidation() {
         super();

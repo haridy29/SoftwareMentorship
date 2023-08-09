@@ -1,5 +1,10 @@
 package Validation;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+
+@AllArgsConstructor
+@NoArgsConstructor
 public abstract class Validate {
     protected String regex;
 
